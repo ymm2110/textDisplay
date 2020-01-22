@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Draw Result</title>
+</head>
+<body>
+
+	<!-- BOOTSTRAP Things -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<!-- RIOT STUFF STARTS HERE -->
+				<result-display-app></result-display-app>
+
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+			apiKey: "AIzaSyAjk5B27oxhXuBnNayzy6TbMvkBR0lPj0I",
+	    authDomain: "cucssa.firebaseapp.com",
+	    databaseURL: "https://cucssa.firebaseio.com",
+	    projectId: "cucssa",
+	    storageBucket: "cucssa.appspot.com",
+	    messagingSenderId: "459421913717",
+	    appId: "1:459421913717:web:7216f024f65aae19959e3c"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+	<script src="tags/result-display-app.tag" type="riot/tag"></script>
+	<script src="tags/result-item.tag" type="riot/tag"></script>
+
+	<script src="https://cdn.jsdelivr.net/riot/3.1/riot+compiler.js"></script>
+
+	<script>
+		riot.mount('*');
+	</script>
+
+</body>
+</html>
+
+<style>
+body {
+  background-image: url("img/cloud.png");
+  background-repeat: repeat;
+  background-color: #cccccc;
+}
+</style>
